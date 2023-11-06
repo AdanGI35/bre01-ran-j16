@@ -15,6 +15,14 @@ header{
     border-bottom:1px solid white;
 }
 
+body > header > img {
+    display:grid;
+    grid-template-columns: 20% 80%;
+    width : 10vw;
+    height : 10vh;
+    max-width : 200px;
+    max-height : 150px;
+}
 
 body > header > nav > ul {
     display:grid;
@@ -24,14 +32,18 @@ body > header > nav > ul {
     margin:0;
     padding:0;
 }
-body > header > nav > ul > li a{
+
+body > header > nav > ul > li {
     align-self:center;
+}
+
+body > header > nav > ul > li a {
     color:white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    margin:0;
-    padding:0;
+    text-transform: uppercase;
 }
+
 main{
     background: linear-gradient(to right, #2E6F95,#455E89,#5C4D7D,#723C70,#892B64);
 }
